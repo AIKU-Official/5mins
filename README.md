@@ -16,16 +16,23 @@
 
 
 ## 방법론
-[데이터셋 생성]
-1. `텍스트`
+
+### 데이터셋 생성
+
+1. 텍스트
    GPT-3.5 turbo 모델을 활용하여 input으로 주어진 instruction 문장을 패러프레이징하여 다양한 instruction 문장 생성
    ![image](https://github.com/user-attachments/assets/7fdac586-9710-46b0-ac69-ed7ea2a49cbf)
 
-2. `이미지`
+2. 이미지
    위에서 생성한 instruction을 랜덤 샘플링하여 이에 맞는 edited image 생성, 이때 instruct pix2pix 모델을 사용하여 paired 데이터셋 생성
    다양한 생성 결과를 위해 image guidance scale을 하나의 값으로 고정하지 않고 여러 값을 사용
 
    ![image](https://github.com/user-attachments/assets/42cea74b-ae9e-4e93-bc1a-c8edd19c63bb)
+
+
+### Fine-tuning
+
+
 
 
 ## 환경 설정
