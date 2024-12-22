@@ -31,16 +31,43 @@
 
 
 ### Fine-tuning
+1. 허깅페이스 삼중항 데이터셋 구축
+   만들어진 데이터셋을 선별하여 삼중항 데이터셋 구축 및 허깅페이스 업로드(input_image, instruction, output_image)
+   ![image](https://github.com/user-attachments/assets/d18075e4-f6b1-439c-a872-7c91c843e43a)
 
+2. 학습 과정
+   diffusers에서 제공하는 train_instruct_pix2pix.py를 실행하여 further training 진행
+   1390개 pair row에 대해서, 총 3000 step 만큼 파인튜닝 진행
+   ![image](https://github.com/user-attachments/assets/773c93ee-96f5-4b09-a81a-026b12fd6e10)
 
 
 
 ## 환경 설정
+```
+conda create --name 5min python=3.9
+conda actibate 5min
 
-(Requirements, Anaconda, Docker 등 프로젝트를 사용하는데에 필요한 요구 사항을 나열해주세요)
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+git clone https://github.com/huggingface/diffusers
+cd diffusers
+pip install .
+
+cd examples/instruct_pix2pix
+pip install -r requirements.txt
+
+accelerate config (default)
+```
 
 ## 사용 방법
-
+train
+```
+sh train.sh
+```
+inference
+```
+python inference.py
+```
 (프로젝트 실행 방법 (명령어 등)을 적어주세요.)
 
 ## 예시 결과
@@ -55,4 +82,4 @@
 - [이성민](): 모델 파인튜닝 / 데이터셋 생성
 - [이현진](): 데모 제작 / 데이터셋 생성
 - [홍예진](): 데모 제작 / 데이터셋 생성
-- [이효민](): 모델 파인튜닝 / 데이터셋 생성
+- [이효민](https://github.com/pwnhyo): 모델 파인튜닝 / 데이터셋 생성
