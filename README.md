@@ -1,4 +1,4 @@
-# 5mins - 우리집 고양이도 메리 크리스마스 🎅
+![image](https://github.com/user-attachments/assets/a8202f43-434c-4eb7-b195-047657384f44)# 5mins - 우리집 고양이도 메리 크리스마스 🎅
 
 📢 2024년 2/겨울학기 [AIKU](https://github.com/AIKU-Official) 활동으로 진행한 프로젝트입니다
 🎉 2024년 2/겨울학기 AIKU Conference 열심히상 수상!
@@ -31,6 +31,14 @@
 
 
 ### Fine-tuning
+1. 허깅페이스 삼중항 데이터셋 구축
+   만들어진 데이터셋을 선별하여 삼중항 데이터셋 구축 및 허깅페이스 업로드(input_image, instruction, output_image)
+   ![image](https://github.com/user-attachments/assets/d18075e4-f6b1-439c-a872-7c91c843e43a)
+
+3. 학습 과정
+   diffusers에서 제공하는 train_instruct_pix2pix.py를 실행하여 further training 진행
+   1390개 pair row에 대해서, 총 3000 step 만큼 파인튜닝 진행
+   ![image](https://github.com/user-attachments/assets/773c93ee-96f5-4b09-a81a-026b12fd6e10)
 
 
 
