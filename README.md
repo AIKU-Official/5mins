@@ -37,7 +37,7 @@
 
 2. 학습 과정  
    diffusers에서 제공하는 train_instruct_pix2pix.py를 실행하여 further training 진행
-   1390개 pair row에 대해서, 총 8000 step 만큼 파인튜닝 진행
+   1390개 pair row에 대해서, 총 8000 step 만큼 파인튜닝 진행  
    <img width="507" alt="image" src="https://github.com/user-attachments/assets/eafe17ab-e68e-4244-9644-ba1cd11cc9e0" />
 
 
