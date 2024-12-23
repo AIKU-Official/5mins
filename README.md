@@ -31,6 +31,9 @@
 
 
 ### Fine-tuning
+#### 0. 생성한 이미지 필터링
+   생성된 이미지들을 manual-data-filtering을 통해 finetuning에 활용할 데이터를 선별
+
 #### 1. 허깅페이스 삼중항 데이터셋 구축  
    만들어진 데이터셋을 선별하여 삼중항 데이터셋 구축 및 허깅페이스 업로드(input_image, instruction, output_image)
      
