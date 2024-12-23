@@ -33,11 +33,13 @@
 ### Fine-tuning
 1. 허깅페이스 삼중항 데이터셋 구축  
    만들어진 데이터셋을 선별하여 삼중항 데이터셋 구축 및 허깅페이스 업로드(input_image, instruction, output_image)
+     
    ![image](https://github.com/user-attachments/assets/d18075e4-f6b1-439c-a872-7c91c843e43a)
-
-2. 학습 과정  
+  
+3. 학습 과정  
    diffusers에서 제공하는 train_instruct_pix2pix.py를 실행하여 further training 진행
-   1390개 pair row에 대해서, 총 8000 step 만큼 파인튜닝 진행  
+   1390개 pair row에 대해서, 총 8000 step 만큼 파인튜닝 진행
+     
    <img width="507" alt="image" src="https://github.com/user-attachments/assets/eafe17ab-e68e-4244-9644-ba1cd11cc9e0" />
 
 
