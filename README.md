@@ -83,7 +83,9 @@ python inference.py
 
 ## 예시 결과
 
-(사용 방법을 실행했을 때 나타나는 결과나 시각화 이미지를 보여주세요)
+![cat1](https://github.com/user-attachments/assets/c78a221b-c61e-4acd-bdf4-a3663b2cd557)
+![dog1](https://github.com/user-attachments/assets/192009a2-c2fc-4ea2-8b63-6a8df86d6ea2)
+
 
 ## 팀원
 
