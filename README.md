@@ -36,11 +36,17 @@
      
    ![image](https://github.com/user-attachments/assets/d18075e4-f6b1-439c-a872-7c91c843e43a)
   
-3. 학습 과정  
+2. 학습 과정  
    diffusers에서 제공하는 train_instruct_pix2pix.py를 실행하여 further training 진행
    1390개 pair row에 대해서, 총 8000 step 만큼 파인튜닝 진행
      
    <img width="507" alt="image" src="https://github.com/user-attachments/assets/eafe17ab-e68e-4244-9644-ba1cd11cc9e0" />
+
+3. huggingface 배포
+   - `pwnhyo/instruct-pix2pix-model`
+     
+   <img width="591" alt="image" src="https://github.com/user-attachments/assets/13bbf79a-959d-45c7-b4c4-db0a5753513f" />
+
 
 
 
