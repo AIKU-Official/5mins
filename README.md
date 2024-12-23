@@ -19,11 +19,11 @@
 
 ### 데이터셋 생성
 
-1. 텍스트
+#### 1. 텍스트
    GPT-3.5 turbo 모델을 활용하여 input으로 주어진 instruction 문장을 패러프레이징하여 다양한 instruction 문장 생성
    ![image](https://github.com/user-attachments/assets/7fdac586-9710-46b0-ac69-ed7ea2a49cbf)
 
-2. 이미지
+#### 2. 이미지
    위에서 생성한 instruction을 랜덤 샘플링하여 이에 맞는 edited image 생성, 이때 instruct pix2pix 모델을 사용하여 paired 데이터셋 생성
    다양한 생성 결과를 위해 image guidance scale을 하나의 값으로 고정하지 않고 여러 값을 사용
 
@@ -31,18 +31,18 @@
 
 
 ### Fine-tuning
-1. 허깅페이스 삼중항 데이터셋 구축  
+#### 1. 허깅페이스 삼중항 데이터셋 구축  
    만들어진 데이터셋을 선별하여 삼중항 데이터셋 구축 및 허깅페이스 업로드(input_image, instruction, output_image)
      
    ![image](https://github.com/user-attachments/assets/d18075e4-f6b1-439c-a872-7c91c843e43a)
   
-2. 학습 과정  
+#### 2. 학습 과정  
    diffusers에서 제공하는 train_instruct_pix2pix.py를 실행하여 further training 진행
    1390개 pair row에 대해서, 총 8000 step 만큼 파인튜닝 진행
      
    <img width="507" alt="image" src="https://github.com/user-attachments/assets/eafe17ab-e68e-4244-9644-ba1cd11cc9e0" />
 
-3. huggingface 배포
+#### 3. huggingface 배포
    - `pwnhyo/instruct-pix2pix-model`
      
    <img width="591" alt="image" src="https://github.com/user-attachments/assets/13bbf79a-959d-45c7-b4c4-db0a5753513f" />
