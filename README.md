@@ -61,23 +61,20 @@ accelerate config (default)
 ```
 
 ## 사용 방법
-train
+### Trainining:
 ```
 sh train.sh
 ```
-inference
+### Inference:
 ```
 python inference.py
 ```
-(프로젝트 실행 방법 (명령어 등)을 적어주세요.)
 
 ## 예시 결과
 
 (사용 방법을 실행했을 때 나타나는 결과나 시각화 이미지를 보여주세요)
 
 ## 팀원
-
-(프로젝트에 참여한 팀원의 이름과 깃헙 프로필 링크, 역할을 작성해주세요)
 
 - [*정혜민](https://github.com/hmin27): Team leader/ 아이디어 제시 및 파이프라인 구축 / 데이터셋 생성
 - [이성민](): 모델 파인튜닝 / 데이터셋 생성
