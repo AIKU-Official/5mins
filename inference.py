@@ -6,7 +6,7 @@ from diffusers.utils import load_image
 import os
 #os.environ["HF_HOME"] = "/d1/hyomin/.cache3"
 
-model = "./instruct-pix2pix-model"
+model = "pwnhyo/instruct-pix2pix-model"
 image = load_image("https://huggingface.co/datasets/sayakpaul/sample-datasets/resolve/main/test_pix2pix_1.png")
 
 pipeline = StableDiffusionInstructPix2PixPipeline.from_pretrained(model, torch_dtype=torch.float16).to("cuda")
